@@ -1,0 +1,18 @@
+name = Conference
+description = Un tema para Drupal
+core = 7.x
+stylesheets[all][] = style.css
+; stylesheets[print][] = print.css
+
+regions[header] = Header
+regions[menu] = Menu
+regions[banner] = Banner
+regions[content] = Content
+regions[footer] = Footer
+regions[testimonios] = Testimonios
+regions[spotlight] = Spotlight
+
+version = "0.1"
+project = "drupal"
+; 2015-10-14
+datestamp = "1444780800"

@@ -1,0 +1,14 @@
+[14-Oct-2015 20:01:16 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/jehisonperez/public_html/conference/sites/all/themes/theme_conference/header.tpl.php on line 3
+[14-Oct-2015 20:02:29 America/New_York] PHP Parse error:  syntax error, unexpected '?' in /home/jehisonperez/public_html/conference/sites/all/themes/theme_conference/header.tpl.php on line 5
+[15-Oct-2015 21:41:07 America/New_York] PHP Parse error:  syntax error, unexpected '_phptemplate_variables' (T_STRING) in /home/jehisonperez/public_html/conference/sites/all/themes/theme_conference/template.php on line 1
+[13-Nov-2015 20:52:56 America/Bogota] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/jehisonperez/public_html/conference/includes/database/database.inc:2171
+Stack trace:
+#0 /home/jehisonperez/public_html/conference/includes/database/database.inc(2171): PDOStatement->execute(Array)
+#1 /home/jehisonperez/public_html/conference/includes/database/database.inc(683): DatabaseStatementBase->execute(Array, Array)
+#2 /home/jehisonperez/public_html/conference/includes/database/database.inc(2350): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/jehisonperez/public_html/conference/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/jehisonperez/public_html/conference/includes/lock.inc(146): lock_may_be_available('schema:runtime:...')
+#5 /home/jehisonperez/public_html/conference/includes/bootstrap.inc(433): lock_acquire('schema:runtime:...')
+#6 /home/jehisonperez/public_html/conference/includes/bootstrap.inc(455): DrupalCacheArray->set(Array)
+# in /home/jehisonperez/public_html/conference/includes/database/database.inc on line 2171
+[13-Nov-2015 20:52:56 America/Bogota] PHP Fatal error:  Access to undeclared static property: Database::$activeKey in /home/jehisonperez/public_html/conference/includes/database/database.inc on line 1466
